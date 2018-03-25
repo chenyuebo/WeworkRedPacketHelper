@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.cyb.wework"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 3
+        versionName "1.2.0"
+        // 只打包中文资源
+        resConfigs "zh"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        release {
+            storeFile file("keystore_chenyuebo.jks")
+            storePassword "123456"
+            keyAlias "cyb"
+            keyPassword "123456"
+        }
+    }
+    buildTypes {
+        debug {
+            //是否混淆
+            minifyEnabled false
+            //是否压缩代码
+            zipAlignEnabled false
+            //移除无用的资源
+            shrinkResources false
+            // 签名配置
+            signingConfig signingConfigs.release
+        }
+        release {
+            //是否混淆
+            minifyEnabled true
+            //是否压缩代码
+            zipAlignEnabled true
+            //移除无用的资源
+            shrinkResources false
+            // 签名配置
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            def releaseTime = "";
+            if (buildType.name.equals("debug")) {
+                releaseTime = new Date().format("yyyy_MM_dd", TimeZone.getDefault())
+            } else if (buildType.name.equals("release")) {
+                releaseTime = new Date().format("yyyy_MM_dd_HH_mm_ss", TimeZone.getDefault())
+            }
+
+            outputFileName = "企业微信红包助手_v${defaultConfig.versionName}" +
+                    "_${defaultConfig.versionCode}_${buildType.name}_${releaseTime}.apk";
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}

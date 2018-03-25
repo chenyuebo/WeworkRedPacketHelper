@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">企业微信红包助手</string>
+    <string name="accessibility_description">企业微信红包助手，帮助你实现在企业微信中，自动抢个人红包和群红包</string>
+    <string name="title_activity_setting">偏好设置</string>
+
+    <string-array name="delayTimes">
+        <item>延时0毫秒</item>
+        <item>延时100毫秒</item>
+        <item>延时200毫秒</item>
+        <item>延时300毫秒</item>
+        <item>延时400毫秒</item>
+        <item>延时500毫秒</item>
+        <item>延时1000毫秒</item>
+        <item>延时2000毫秒</item>
+    </string-array>
+
+    <string-array name="delayTimesValue">
+        <item>0</item>
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+    </string-array>
+</resources>
