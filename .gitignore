@@ -8,4 +8,4 @@
 .externalNativeBuild
 /app/build
 /app/release
-/app/*.jks
+*.jks
