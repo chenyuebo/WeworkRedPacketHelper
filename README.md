@@ -7,3 +7,7 @@
 - 2.4.7
 - 2.4.9
 - 2.4.12
+
+## 屏幕截图
+
+<img src="https://github.com/chenyuebo/WeworkRedPacketHelper/blob/master/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE/%E4%B8%BB%E7%95%8C%E9%9D%A2.png" width="250px"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/chenyuebo/WeworkRedPacketHelper/blob/master/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE/%E8%AE%BE%E7%BD%AE.png" width="250px"/>
