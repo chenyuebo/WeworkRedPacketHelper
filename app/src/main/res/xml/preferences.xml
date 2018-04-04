@@ -44,14 +44,14 @@
     <PreferenceCategory android:title="关于本应用">
         <Preference
             android:key="pref_app_version"
-            android:summary="v1.2.0"
+            android:summary="v1.3.0"
             android:title="版本" />
         <Preference
             android:key="pref_app_author"
             android:summary="CYB"
             android:title="作者" />
         <Preference
-            android:summary="由于部分功能使用了企业微信部分View的Id，所以升级企业微信客户端可能造成本软件部分功能失效。\n已测试企业微信版本如下：\n2.4.7\n2.4.9\n2.4.12"
+            android:summary="由于部分功能使用了企业微信部分View的Id，所以升级企业微信客户端可能造成本软件部分功能失效。\n已测试企业微信版本如下：\n2.4.7\n2.4.9\n2.4.12\n2.4.14"
             android:title="使用说明" />
     </PreferenceCategory>
 </PreferenceScreen>
