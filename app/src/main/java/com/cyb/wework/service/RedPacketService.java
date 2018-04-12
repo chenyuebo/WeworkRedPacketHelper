@@ -199,6 +199,8 @@ public class RedPacketService extends AccessibilityService {
             return "com.tencent.wework:id/bxe";
         } else if ("2.4.14".equals(weworkVersion)) {
             return "com.tencent.wework:id/bxj";
+        } else if ("2.4.16".equals(weworkVersion)) {
+            return "com.tencent.wework:id/c4w";
         }
         return null;
     }
