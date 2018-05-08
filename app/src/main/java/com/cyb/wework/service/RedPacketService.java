@@ -188,7 +188,7 @@ public class RedPacketService extends AccessibilityService {
         }
     }
 
-    private String getOpenBtnId(){
+    private String getOpenBtnId() {
         String weworkVersion = AppUtil.getWeworkVersion(this);
         LogUtil.d("weworkVersion=" + weworkVersion);
         if ("2.4.7".equals(weworkVersion)) {
@@ -201,6 +201,8 @@ public class RedPacketService extends AccessibilityService {
             return "com.tencent.wework:id/bxj";
         } else if ("2.4.16".equals(weworkVersion)) {
             return "com.tencent.wework:id/c4w";
+        } else if ("2.4.18".equals(weworkVersion)) {
+            return "com.tencent.wework:id/c6c";
         }
         return null;
     }
