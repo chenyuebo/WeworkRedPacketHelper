@@ -2,7 +2,7 @@
 实现企业微信红包自动点击，自动抢红包
 
 ## 最新版下载地址
-[企业微信红包助手_v1.5.0_6_release_2018_05_08_13_40_14.apk](https://github.com/chenyuebo/WeworkRedPacketHelper/raw/master/apk/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E7%BA%A2%E5%8C%85%E5%8A%A9%E6%89%8B_v1.5.0_6_release_2018_05_08_13_40_14.apk)
+[企业微信红包助手_v1.6.0_7_release_2018_06_28_11_24_15.apk](https://github.com/chenyuebo/WeworkRedPacketHelper/raw/master/apk/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E7%BA%A2%E5%8C%85%E5%8A%A9%E6%89%8B_v1.6.0_7_release_2018_06_28_11_24_15.apk)
 ## 已适配企业微信版本
 - 2.4.7
 - 2.4.9
