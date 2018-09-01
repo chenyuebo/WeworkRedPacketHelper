@@ -17,6 +17,6 @@
 
 ## 屏幕截图
 
-<img src="https://github.com/chenyuebo/WeworkRedPacketHelper/blob/master/Screenshot_2018-09-01-10-07-22-395_com.cyb.wework.png" width="250px"/>
+<img src="https://github.com/chenyuebo/WeworkRedPacketHelper/blob/master/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE/Screenshot_2018-09-01-10-07-22-395_com.cyb.wework.png" width="250px"/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="https://github.com/chenyuebo/WeworkRedPacketHelper/blob/master/Screenshot_2018-09-01-10-07-27-396_com.cyb.wework.png" width="250px"/>
+<img src="https://github.com/chenyuebo/WeworkRedPacketHelper/blob/master/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE/Screenshot_2018-09-01-10-07-27-396_com.cyb.wework.png" width="250px"/>
