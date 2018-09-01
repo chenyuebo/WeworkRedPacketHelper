@@ -6,8 +6,8 @@ android {
         applicationId "com.cyb.wework"
         minSdkVersion 16
         targetSdkVersion 26
-        versionCode 8
-        versionName "1.7.0"
+        versionCode 9
+        versionName "1.8.0"
         // 只打包中文资源
         resConfigs "zh"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
