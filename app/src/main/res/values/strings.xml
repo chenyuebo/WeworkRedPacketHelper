@@ -1,7 +1,31 @@
 <resources>
     <string name="app_name">企业微信红包助手</string>
     <string name="accessibility_description">企业微信红包助手，帮助你实现在企业微信中，自动抢个人红包和群红包</string>
-    <string name="title_activity_setting">偏好设置</string>
+    <string name="preference_setting">偏好设置</string>
+
+    <string name="open_assistant">开启助手</string>
+    <string name="open_monitor_notification">开启通知监听</string>
+
+    <string name="open_red_packet">领取红包</string>
+    <string name="red_packet_have_opened">手慢了，红包派完了</string>
+    <string name="red_packet_expired">该红包已过期</string>
+    <string name="notification_default_keyword">拼手气红包</string>
+
+    <string name="monitor_setting">监视选项</string>
+    <string name="monitor_notification">监视系统通知</string>
+    <string name="monitor_notification_keyword">设置监听关键词</string>
+    <string name="safty_setting">防封号选项</string>
+    <string name="delay_opening_red_packet">延时拆开红包</string>
+    <string name="open_red_packet_automatically">自动拆开红包</string>
+    <string name="close_red_packet_automatically">自动关闭红包</string>
+    <string name="click_msg_automatically">自动点击红包消息</string>
+    <string name="about">关于本应用</string>
+    <string name="version">版本</string>
+    <string name="author">作者</string>
+    <string name="instructions">使用说明</string>
+    <string name="instructions_detail">由于部分功能使用了企业微信部分View的Id，所以升级企业微信客户端可能造成本软件部分功能失效。
+            \n已适配企业微信版本如下：
+            \n2.4.7，2.4.9，2.4.12，2.4.14，2.4.16，2.4.18，2.4.20，2.4.22，2.4.99，2.5.0，2.5.2，2.5.8</string>
 
     <string-array name="delayTimes">
         <item>延时0毫秒</item>

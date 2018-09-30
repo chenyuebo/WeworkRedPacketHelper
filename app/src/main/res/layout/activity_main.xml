@@ -19,6 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
+            android:textAlignment="center"
             android:layout_marginTop="60dp"
             android:text="@string/app_name"
             android:textColor="#FFFFFF"
@@ -75,7 +76,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="开启助手"
+                        android:text="@string/open_assistant"
+                        android:textAlignment="center"
                         android:textColor="#dfaa6a"
                         android:textSize="18dp"
                         android:textStyle="bold" />
@@ -105,7 +107,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="开启通知监听"
+                        android:text="@string/open_monitor_notification"
+                        android:textAlignment="center"
                         android:textColor="#dfaa6a"
                         android:textSize="18dp"
                         android:textStyle="bold" />
@@ -135,7 +138,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="设置"
+                        android:text="@string/preference_setting"
+                        android:textAlignment="center"
                         android:textColor="#dfaa6a"
                         android:textSize="18dp"
                         android:textStyle="bold" />

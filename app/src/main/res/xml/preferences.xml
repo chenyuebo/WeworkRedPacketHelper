@@ -1,59 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory android:title="监视选项">
+    <PreferenceCategory android:title="@string/monitor_setting">
 
         <CheckBoxPreference
             android:defaultValue="true"
             android:key="pref_watch_notification"
             android:summary="读取新消息通知中的红包提示并进入聊天页"
-            android:title="监视系统通知" />
+            android:title="@string/monitor_notification" />
         <EditTextPreference
-            android:defaultValue="拼手气红包;"
+            android:defaultValue="拼手气红包;Random Amount Red Packet"
             android:key="pref_notification_keyword"
             android:summary="当通知中出现设置的关键词时自动点击通知，多个关键词使用英文的分号';'隔开"
-            android:title="设置监听关键词" />
+            android:title="@string/monitor_notification_keyword" />
     </PreferenceCategory>
 
-    <PreferenceCategory android:title="防封号选项">
+    <PreferenceCategory android:title="@string/safty_setting">
         <CheckBoxPreference
             android:defaultValue="true"
             android:key="pref_auto_click_msg"
             android:summary="在聊天页面自动点击屏幕中最下方的红包"
-            android:title="自动点击红包消息" />
+            android:title="@string/click_msg_automatically" />
         <CheckBoxPreference
             android:defaultValue="true"
             android:key="pref_auto_open"
             android:summary="点开的红包自动点击开按钮"
-            android:title="自动拆开红包" />
+            android:title="@string/open_red_packet_automatically" />
         <CheckBoxPreference
             android:defaultValue="true"
             android:key="pref_auto_close"
             android:summary="红包已抢完或已过期或者进入红包详情页后自动返回"
-            android:title="自动关闭红包" />
+            android:title="@string/close_red_packet_automatically" />
         <ListPreference
             android:entries="@array/delayTimes"
             android:entryValues="@array/delayTimesValue"
             android:key="pref_delay_ms"
             android:defaultValue="0"
             android:summary="延时一段时间点击开按钮"
-            android:title="延时拆开红包">
+            android:title="@string/delay_opening_red_packet">
 
         </ListPreference>
     </PreferenceCategory>
 
-    <PreferenceCategory android:title="关于本应用">
+    <PreferenceCategory android:title="@string/about">
         <Preference
             android:key="pref_app_version"
-            android:summary="v1.9.0"
-            android:title="版本" />
+            android:summary="v1.10.0"
+            android:title="@string/version" />
         <Preference
             android:key="pref_app_author"
             android:summary="CYB"
-            android:title="作者" />
+            android:title="@string/author" />
         <Preference
-            android:summary="由于部分功能使用了企业微信部分View的Id，所以升级企业微信客户端可能造成本软件部分功能失效。
-            \n已测试企业微信版本如下：
-            \n2.4.7，2.4.9，2.4.12，2.4.14，2.4.16，2.4.18，2.4.20，2.4.22，2.4.99，2.5.0，2.5.2"
-            android:title="使用说明" />
+            android:summary="@string/instructions_detail"
+            android:title="@string/instructions" />
     </PreferenceCategory>
 </PreferenceScreen>

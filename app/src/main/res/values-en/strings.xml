@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">WeChat Work Red Packet Assistant</string>
+    <string name="accessibility_description">企业微信红包助手，帮助你实现在企业微信中，自动抢个人红包和群红包</string>
+    <string name="preference_setting">Settings</string>
+
+    <string name="open_assistant">Open Assistant</string>
+    <string name="open_monitor_notification">Monitor Notification</string>
+
+    <string name="open_red_packet">Open Red Packet</string>
+    <string name="red_packet_have_opened">All red packets have been opened.</string>
+    <string name="red_packet_expired">Red Packet expired</string>
+    <string name="notification_default_keyword">Random Amount Red Packet</string>
+
+    <string name="monitor_setting">Monitor Setting</string>
+    <string name="monitor_notification">Monitor Notification</string>
+    <string name="monitor_notification_keyword">Motification Keywords</string>
+    <string name="safty_setting">Safty Setting</string>
+    <string name="delay_opening_red_packet">Delay Opening Red Packet</string>
+    <string name="open_red_packet_automatically">Open Red Packet Automatically</string>
+    <string name="close_red_packet_automatically">Close Red Packet Automatically</string>
+    <string name="click_msg_automatically">Click Message Automatically</string>
+    <string name="about">About</string>
+    <string name="version">Version</string>
+    <string name="author">Author</string>
+    <string name="instructions">Instructions</string>
+    <string name="instructions_detail">Adapted WeChat Work Version:
+        \n2.4.7，2.4.9，2.4.12，2.4.14，2.4.16，2.4.18，2.4.20，2.4.22，2.4.99，2.5.0，2.5.2，2.5.8</string>
+
+    <string-array name="delayTimes">
+        <item>Delay of 0 ms</item>
+        <item>Delay of 100 ms</item>
+        <item>Delay of 200 ms</item>
+        <item>Delay of 300 ms</item>
+        <item>Delay of 400 ms</item>
+        <item>Delay of 500 ms</item>
+        <item>Delay of 1000 ms</item>
+        <item>Delay of 2000 ms</item>
+    </string-array>
+
+    <string-array name="delayTimesValue">
+        <item>0</item>
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+    </string-array>
+</resources>

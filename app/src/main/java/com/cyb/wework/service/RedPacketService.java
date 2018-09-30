@@ -14,6 +14,7 @@ import android.text.TextUtils;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
 
+import com.cyb.wework.R;
 import com.cyb.wework.utils.AppUtil;
 import com.cyb.wework.utils.LogUtil;
 
@@ -99,7 +100,8 @@ public class RedPacketService extends AccessibilityService {
                 LogUtil.d("notification or toast text=" + text);
                 String content = text.toString();
 
-                String keywords = sharedPreferences.getString("pref_notification_keyword", "拼手气红包");
+                String defaultKeyword = getResources().getString(R.string.notification_default_keyword); // 拼手气红包
+                String keywords = sharedPreferences.getString("pref_notification_keyword", defaultKeyword);
                 String[] keywordArray = keywords.split(";");
                 for (String keyword : keywordArray) {
                     if (keyword != null && keyword.length() > 0) {
@@ -150,8 +152,10 @@ public class RedPacketService extends AccessibilityService {
         LogUtil.d( "拆开红包 openPacket");
         final AccessibilityNodeInfo nodeInfo = getRootInActiveWindow();
         if (nodeInfo != null) {
-            List<AccessibilityNodeInfo> resultList = nodeInfo.findAccessibilityNodeInfosByText("手慢了，红包派完了");
-            List<AccessibilityNodeInfo> resultList2 = nodeInfo.findAccessibilityNodeInfosByText("该红包已过期");
+            String haveBeenOpened = getResources().getString(R.string.red_packet_have_opened); // 手慢了，红包派完了
+            String redPacketExpired = getResources().getString(R.string.red_packet_expired); // 红包已过期
+            List<AccessibilityNodeInfo> resultList = nodeInfo.findAccessibilityNodeInfosByText(haveBeenOpened);
+            List<AccessibilityNodeInfo> resultList2 = nodeInfo.findAccessibilityNodeInfosByText(redPacketExpired);
             LogUtil.d( "手慢了，红包派完了 resultList=" + resultList.size());
             LogUtil.d( "该红包已过期 resultList2=" + resultList2.size());
             // 判断红包是否已抢完，如已经抢完则自动关闭抢红包页面，如没有抢完则自动抢红包
@@ -213,6 +217,8 @@ public class RedPacketService extends AccessibilityService {
             return "com.tencent.wework:id/cjj";
         } else if ("2.5.2".equals(weworkVersion)) {
             return "com.tencent.wework:id/cjj";
+        } else if ("2.5.8".equals(weworkVersion)) {
+            return "com.tencent.wework:id/cwf";
         }
         return null;
     }
@@ -225,7 +231,8 @@ public class RedPacketService extends AccessibilityService {
     private void queryPacket() {
         LogUtil.d( "开始查找红包 queryPacket");
         AccessibilityNodeInfo rootNode = getRootInActiveWindow();
-        AccessibilityNodeInfo node = getLastRedpackageNode(rootNode, "领取红包");
+        String searchText = getResources().getString(R.string.open_red_packet); // 领取红包
+        AccessibilityNodeInfo node = getLastRedpackageNode(rootNode, searchText);
         LogUtil.d( "最新的红包=" + node);
         if (node != null) {
             node.performAction(AccessibilityNodeInfo.ACTION_CLICK);
@@ -267,36 +274,6 @@ public class RedPacketService extends AccessibilityService {
         }
         return resultNode;
     }
-
-//    /**
-//     * 递归查找当前聊天窗口中的红包信息
-//     *
-//     * 聊天窗口中的红包都存在"领取红包"一词,因此可根据该词查找红包
-//     *
-//     * @param node
-//     */
-//    public AccessibilityNodeInfo recycle(AccessibilityNodeInfo node) {
-//        LogUtil.d( "recycle");
-//        if (node == null) {
-//            return null;
-//        }
-//        AccessibilityNodeInfo resultNode = null;
-//        if (node.getChildCount() == 0) {
-//            if (node.getText() != null) {
-//                if ("领取红包".equals(node.getText().toString())) {
-//                    resultNode = node;
-//                }
-//            }
-//        } else {
-//            for (int i = 0; i < node.getChildCount(); i++) {
-//                if (node.getChild(i) != null) {
-//                    AccessibilityNodeInfo tmpNode = recycle(node.getChild(i));
-//                    resultNode = tmpNode == null ? resultNode : tmpNode;
-//                }
-//            }
-//        }
-//        return resultNode;
-//    }
 
     @Override
     public void onInterrupt() {
